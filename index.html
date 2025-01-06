@@ -2,284 +2,319 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Food Categories</title>
+    <title>Food Categories</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
-background-color: #fff8e1;
+            background-color: #fff8e1;
             color: #5a4a29;
-    }
+        }
 
-.navbar {
-background-color: #ff8c42;
-}
+        .navbar {
+            background-color: #ff8c42;
+        }
+
         .navbar-brand {
- font-weight: bold;
-                color: #fff;
+            font-weight: bold;
+            color: #fff;
         }
-  .navbar-nav .nav-link {
-                color: #fff;
-                    }
-            .navbar-nav .nav-link:hover {
-    color: #ffd700;
-            }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffd700;
+        }
+
         h1 {
- color: #ff8c42;
-            }
-
-.card {
-background-color: #fff;
-    border: 1px solid #5a4a29;
+            color: #ff8c42;
         }
- .card-title {
-color: #ff8c42;
-                    }
 
-.card-text {
- color: #5a4a29;
-                    }
+        .card {
+            background-color: #fff;
+            border: 1px solid #5a4a29;
+        }
 
+        .card-title {
+            color: #ff8c42;
+        }
+
+        .card-text {
+            color: #5a4a29;
+        }
     </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-  <a class="navbar-brand" href="#">Mergal's Kawali</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="navbar-brand" href="#">Mergal's Kawali</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-    <a class="nav-link" href="#">Home</a>
-                    </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Recipes</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-  <a class="nav-link" href="#">About</a>
-</li>
-            <li class="nav-item">
-  <a class="nav-link" href="#">Submit Recipe</a>
+                        <a class="nav-link" href="#">Recipes</a>
                     </li>
-                    </ul>
-<form class="d-flex" role="search">
-    <input class="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search">
-        <button class="btn btn-outline-light" type="submit">Search</button>
-                    </form>
-</div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Submit Recipe</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search recipes" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
 
- <div class="container mt-5">
-        <div class="text-center">
-            <h1>Food Categories</h1>
-        </div>
-    <div class="row mt-4">
-  <div class="col-md-4">
-        <div class="card mb-4">
-            <div class="card-body text-center">
-<h5 class="card-title">Sinigang</h5>
-<p class="card-text">A tangy tamarind-based soup with vegetables and your choice of meat or seafood.</p>
-<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sinigangModal">View Recipe</a>
-        </div>
+    <div class="container mt-5">
+    <div class="text-center">
+        <h1>Food Categories</h1>
     </div>
-            <div class="card mb-4">
-            <div class="card-body text-center">
-<h5 class="card-title">Bulalo</h5>
-<p class="card-text">A hearty beef soup made with bone marrow, corn, and greens, perfect for cold weather.</p>
-    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bulaloModal">View Recipe</a>
-            </div>
-        </div>
-</div>
 
-<div class="col-md-4">
-    <div class="card mb-4">
-<div class="card-body text-center">
-<h5 class="card-title">Adobo Rice</h5>
-<p class="card-text">Flavored rice infused with the savory and tangy essence of adobo sauce.</p>
-<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoboRiceModal">View Recipe</a>
-</div>
-</div>
-    <div class="card mb-4">
-    <div class="card-body text-center">
-<h5 class="card-title">Paella</h5>
-<p class="card-text">A festive rice dish with a mix of seafood, meat, and vegetables in saffron-infused rice.</p>
-<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paellaModal">View Recipe</a>
-        </div>
-    </div>
-</div>
-
-<div class="col-md-4">
-    <div class="card mb-4">
-<div class="card-body text-center">
-<h5 class="card-title">Atchara</h5>
-<p class="card-text">A sweet and tangy pickled papaya dish often paired with fried or grilled food.</p>
-<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#atcharaModal">View Recipe</a>
-        </div>
-    </div>
-    <div class="card mb-4">
-        <div class="card-body text-center">
-<h5 class="card-title">Lumpia</h5>
-<p class="card-text">Filipino spring rolls filled with meat and vegetables, fried to a crisp golden perfection.</p>
-<a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lumpiaModal">View Recipe</a>
+    <div class="mt-4">
+        <h3 class="text-center p-2" style="background-color: #ffe6cc; color: #5a4a29;">Soups</h3>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sinigang</h5>
+                        <p class="card-text">A tangy tamarind-based soup with vegetables and your choice of meat or seafood.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sinigangModal">View Recipe</a>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bulalo</h5>
+                        <p class="card-text">A hearty beef soup made with bone marrow, corn, and greens, perfect for cold weather.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bulaloModal">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h3 class="text-center p-2" style="background-color: #ffe6cc; color: #5a4a29;">Rice Dishes</h3>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Adobo Rice</h5>
+                        <p class="card-text">Flavored rice infused with the savory and tangy essence of adobo sauce.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#adoboRiceModal">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Paella</h5>
+                        <p class="card-text">A festive rice dish with a mix of seafood, meat, and vegetables in saffron-infused rice.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paellaModal">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-4">
+        <h3 class="text-center p-2" style="background-color: #ffe6cc; color: #5a4a29;">Side Dishes</h3>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Atchara</h5>
+                        <p class="card-text">A sweet and tangy pickled papaya dish often paired with fried or grilled food.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#atcharaModal">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Lumpia</h5>
+                        <p class="card-text">Filipino spring rolls filled with meat and vegetables, fried to a crisp golden perfection.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lumpiaModal">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-    <div class="modal fade" id="sinigangModal" tabindex="-1" aria-labelledby="sinigangModalLabel" aria-hidden="true">
+
+    <div class="modal fade" id="sinigangModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="sinigangModalLabel">Sinigang Recipe</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header">
+                    <h5 class="modal-title">Sinigang Recipe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
+                    <img src="" alt="Sinigang Image" class="img-fluid mb-3">
                     <h6>Ingredients:</h6>
                     <ul>
                         <li>Tamarind paste</li>
-                        <li>Meat or seafood of choice</li>
-                        <li>Various vegetables (eggplant, kangkong, string beans)</li>
-                        <li>Fish sauce and other seasonings</li>
+                        <li>Meat or seafood</li>
+                        <li>Vegetables (eggplant, kangkong, etc.)</li>
                     </ul>
                     <h6>Procedure:</h6>
                     <ol>
-                        <li>Boil tamarind paste with water to make the sour broth.</li>
-                        <li>Add meat or seafood, cook until tender.</li>
-                        <li>Add vegetables and seasonings.</li>
-                        <li>Simmer until vegetables are cooked.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="bulaloModal" tabindex="-1" aria-labelledby="bulaloModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="bulaloModalLabel">Bulalo Recipe</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Ingredients:</h6>
-                    <ul>
-                        <li>Beef shank with bone marrow</li>
-                        <li>Corn on the cob</li>
-                        <li>Greens (e.g., cabbage, pechay)</li>
-                        <li>Salt and pepper</li>
-                    </ul>
-                    <h6>Procedure:</h6>
-                    <ol>
-                        <li>Boil beef shank with water until marrow is soft.</li>
-                        <li>Add corn and cook until tender.</li>
-                        <li>Add greens and season with salt and pepper.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="adoboRiceModal" tabindex="-1" aria-labelledby="adoboRiceModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="adoboRiceModalLabel">Adobo Rice Recipe</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Ingredients:</h6>
-                    <ul>
-                        <li>Cooked rice</li>
-                        <li>Adobo sauce (soy sauce, vinegar, garlic)</li>
-                        <li>Chopped meat (chicken, pork, or beef)</li>
-                    </ul>
-                    <h6>Procedure:</h6>
-                    <ol>
-                        <li>Stir-fry meat with garlic.</li>
-                        <li>Add adobo sauce and simmer.</li>
-                        <li>Mix with rice and cook until flavors blend.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="paellaModal" tabindex="-1" aria-labelledby="paellaModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="paellaModalLabel">Paella Recipe</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Ingredients:</h6>
-                    <ul>
-                        <li>Seafood (shrimp, mussels)</li>
-                        <li>Meat (chicken, pork)</li>
-                        <li>Vegetables (peas, bell peppers)</li>
-                        <li>Saffron-infused rice</li>
-                    </ul>
-                    <h6>Procedure:</h6>
-                    <ol>
-                        <li>Cook meat and seafood separately.</li>
-                        <li>Sauté vegetables and add rice.</li>
-                        <li>Pour in stock and simmer until rice is cooked.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="atcharaModal" tabindex="-1" aria-labelledby="atcharaModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="atcharaModalLabel">Atchara Recipe</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Ingredients:</h6>
-                    <ul>
-                        <li>Green papaya</li>
-                        <li>Vinegar, sugar, and salt</li>
-                        <li>Garlic, onions, and pepper</li>
-                    </ul>
-                    <h6>Procedure:</h6>
-                    <ol>
-                        <li>Slice papaya into thin strips.</li>
-                        <li>Pickle with vinegar, sugar, and seasonings.</li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="lumpiaModal" tabindex="-1" aria-labelledby="lumpiaModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="lumpiaModalLabel">Lumpia Recipe</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Ingredients:</h6>
-                    <ul>
-                        <li>Spring roll wrappers</li>
-                        <li>Meat (ground pork, chicken)</li>
-                        <li>Vegetables (carrots, cabbage)</li>
-                    </ul>
-                    <h6>Procedure:</h6>
-                    <ol>
-                        <li>Mix meat and vegetables, season well.</li>
-                        <li>Wrap the filling in spring roll wrappers.</li>
-                        <li>Fry until golden brown.</li>
+                        <li>Prepare a tamarind-based broth.</li>
+                        <li>Add meat or seafood and vegetables.</li>
+                        <li>Simmer until everything is tender.</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
 
+<div class="modal fade" id="bulaloModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Bulalo Recipe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Bulalo Image" class="img-fluid mb-3">
+                <h6>Ingredients:</h6>
+                <ul>
+                    <li>Beef shanks with bone marrow</li>
+                    <li>Corn on the cob</li>
+                    <li>Cabbage and pechay</li>
+                </ul>
+                <h6>Procedure:</h6>
+                <ol>
+                    <li>Boil beef shanks until tender.</li>
+                    <li>Add corn and simmer until soft.</li>
+                    <li>Mix in cabbage and pechay before serving.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="adoboRiceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Adobo Rice Recipe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Adobo Rice Image" class="img-fluid mb-3">
+                <h6>Ingredients:</h6>
+                <ul>
+                    <li>Cooked rice</li>
+                    <li>Adobo sauce</li>
+                    <li>Garlic</li>
+                </ul>
+                <h6>Procedure:</h6>
+                <ol>
+                    <li>Sauté garlic in oil.</li>
+                    <li>Add adobo sauce and stir in rice.</li>
+                    <li>Mix until rice is evenly coated and heated.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="paellaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Paella Recipe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Paella Image" class="img-fluid mb-3">
+                <h6>Ingredients:</h6>
+                <ul>
+                    <li>Saffron-infused rice</li>
+                    <li>Seafood (shrimp, mussels, etc.)</li>
+                    <li>Chicken or chorizo</li>
+                </ul>
+                <h6>Procedure:</h6>
+                <ol>
+                    <li>Sauté chicken and seafood in a large pan.</li>
+                    <li>Add rice and saffron broth, then simmer.</li>
+                    <li>Cook until rice is tender and serve.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="atcharaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Atchara Recipe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Atchara Image" class="img-fluid mb-3">
+                <h6>Ingredients:</h6>
+                <ul>
+                    <li>Grated green papaya</li>
+                    <li>Vinegar and sugar</li>
+                    <li>Carrots and bell peppers</li>
+                </ul>
+                <h6>Procedure:</h6>
+                <ol>
+                    <li>Mix grated papaya with vinegar and sugar.</li>
+                    <li>Add carrots, bell peppers, and spices.</li>
+                    <li>Let it marinate for several days before serving.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="lumpiaModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Lumpia Recipe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Lumpia Image" class="img-fluid mb-3">
+                <h6>Ingredients:</h6>
+                <ul>
+                    <li>Ground pork or beef</li>
+                    <li>Carrots and cabbage</li>
+                    <li>Lumpia wrappers</li>
+                </ul>
+                <h6>Procedure:</h6>
+                <ol>
+                    <li>Mix ground meat with vegetables and spices.</li>
+                    <li>Wrap in lumpia wrappers and seal edges.</li>
+                    <li>Fry until golden and crispy.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 

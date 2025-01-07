@@ -85,10 +85,11 @@
         <h1>Food Categories</h1>
     </div>
 
+    <!-- Soups Category -->
     <div class="mt-4">
         <h3 class="text-center p-2" style="background-color: #ffe6cc; color: #5a4a29;">Soups</h3>
         <div class="row mt-3">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body text-center">
                         <h5 class="card-title">Sinigang</h5>
@@ -97,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body text-center">
                         <h5 class="card-title">Bulalo</h5>
@@ -106,13 +107,23 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+             <div class="card mb-4">
+              <div class="card-body text-center">
+               <h5 class="card-title">Tinola</h5>
+               <p class="card-text">A light ginger-based soup with chicken, green papaya, and chili leaves.</p>
+               <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tinolaModal">View Recipe</a>
         </div>
     </div>
+</div>
+</div>
+</div>
 
+    <!-- Rice Dishes Category -->
     <div class="mt-4">
         <h3 class="text-center p-2" style="background-color: #ffe6cc; color: #5a4a29;">Rice Dishes</h3>
         <div class="row mt-3">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body text-center">
                         <h5 class="card-title">Adobo Rice</h5>
@@ -121,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body text-center">
                         <h5 class="card-title">Paella</h5>
@@ -130,14 +141,23 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+             <div class="card mb-4">
+              <div class="card-body text-center">
+              <h5 class="card-title">Sizzling Sisig Fried Rice</h5>
+              <p class="card-text">A delicious fried rice made with crispy sisig, seasoned with soy sauce, and served sizzling hot.</p>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sisigFriedRiceModal">View Recipe</a>
         </div>
     </div>
+</div>
+</div>
+</div>
 
-
+    <!-- Side Dishes Category -->
     <div class="mt-4">
         <h3 class="text-center p-2" style="background-color: #ffe6cc; color: #5a4a29;">Side Dishes</h3>
         <div class="row mt-3">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body text-center">
                         <h5 class="card-title">Atchara</h5>
@@ -146,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body text-center">
                         <h5 class="card-title">Lumpia</h5>
@@ -155,10 +175,19 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+    <div class="card mb-4">
+        <div class="card-body text-center">
+            <h5 class="card-title">Ensaladang Talong</h5>
+            <p class="card-text">A smoky eggplant salad mixed with tomatoes, onions, and vinegar dressing.</p>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ensaladangTalongModal">View Recipe</a>
         </div>
     </div>
 </div>
-
+        </div>
+    </div>
+</div>
+    <!-- Modals -->
     <div class="modal fade" id="sinigangModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -185,6 +214,7 @@
         </div>
     </div>
 
+    <!-- Bulalo Modal -->
 <div class="modal fade" id="bulaloModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -211,6 +241,7 @@
     </div>
 </div>
 
+<!-- Adobo Rice Modal -->
 <div class="modal fade" id="adoboRiceModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -237,6 +268,7 @@
     </div>
 </div>
 
+<!-- Paella Modal -->
 <div class="modal fade" id="paellaModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -263,6 +295,7 @@
     </div>
 </div>
 
+<!-- Atchara Modal -->
 <div class="modal fade" id="atcharaModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -289,7 +322,7 @@
     </div>
 </div>
 
-
+<!-- Lumpia Modal -->
 <div class="modal fade" id="lumpiaModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -310,6 +343,60 @@
                     <li>Mix ground meat with vegetables and spices.</li>
                     <li>Wrap in lumpia wrappers and seal edges.</li>
                     <li>Fry until golden and crispy.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ensaladangTalongModal" tabindex="-1" aria-labelledby="ensaladangTalongModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ensaladangTalongModalLabel">Ensaladang Talong Recipe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Ensaladang Talong Image" class="img-fluid mb-3">
+                <h6>Ingredients:</h6>
+                <ul>
+                    <li>Grilled eggplants</li>
+                    <li>Tomatoes</li>
+                    <li>Red onions</li>
+                    <li>Vinegar and fish sauce</li>
+                </ul>
+                <h6>Procedure:</h6>
+                <ol>
+                    <li>Grill eggplants until skin is charred. Peel off the skin.</li>
+                    <li>Chop eggplants, tomatoes, and onions into bite-sized pieces.</li>
+                    <li>Mix with vinegar and fish sauce dressing before serving.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="tinolaModal" tabindex="-1" aria-labelledby="tinolaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tinolaModalLabel">Tinola Recipe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Tinola Image" class="img-fluid mb-3">
+                <h6>Ingredients:</h6>
+                <ul>
+                    <li>Chicken pieces</li>
+                    <li>Green papaya</li>
+                    <li>Ginger</li>
+                    <li>Chili leaves</li>
+                </ul>
+                <h6>Procedure:</h6>
+                <ol>
+                    <li>Saute garlic, onion, and ginger in oil.</li>
+                    <li>Add chicken and cook until lightly browned.</li>
+                    <li>Add water and simmer until chicken is tender.</li>
+                    <li>Add green papaya and cook until soft. Add chili leaves before serving.</li>
                 </ol>
             </div>
         </div>
